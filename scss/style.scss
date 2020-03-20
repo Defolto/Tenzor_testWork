@@ -1,0 +1,102 @@
+#app{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.m0{
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+        &__btn{
+            padding: 10px 5px;
+            background-color: rgb(128, 128, 248);
+
+            &_w50{
+                width: 50%;
+                margin: 0 15px;
+            }
+        }
+
+        .search{
+            padding: 7px;
+            margin-top: 15px;
+        }
+
+        .sort{
+            margin-top: 15px;
+        }
+
+        .spisok{
+            max-height: 600px;
+            padding: 0;
+            margin: 0;
+            margin-top: 15px;
+            overflow-y: scroll;
+            list-style: none;
+
+            .item{
+                padding: 15px 8px;
+                margin: 5px 0;
+                cursor: pointer;
+                border: 1px solid black;
+                transition: .4s;
+
+                h4,
+                p{
+                    padding: 5px;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                &:hover{
+                    color: white;
+                    background-color: grey;
+                }
+
+                &_active{
+                    color: white;
+                    background-color: grey;
+                }
+            }
+        }
+
+        .note{
+            display: flex;
+            flex-direction: column;
+            margin: 0 15px;
+
+            #title,
+            #desription{
+                margin: 5px 0;
+            }
+
+            .save{
+                padding: 10px 5px;
+                margin-top: 15px;
+                font-size: 25px;
+                background-color: green;
+                border: 0 solid black;
+                box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75);
+            }
+        }
+    }
+
+    .column:first-child{
+        width: 30%;
+    }
+
+    .column:last-child{
+        width: 70%;
+    }
+}

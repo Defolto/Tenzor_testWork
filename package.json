@@ -1,0 +1,31 @@
+{
+  "name": "yamfenix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Defolto/YamFenix.git"
+  },
+  "author": "maxim egorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Defolto/YamFenix/issues"
+  },
+  "homepage": "https://github.com/Defolto/YamFenix#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^11.0.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
